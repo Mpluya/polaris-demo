@@ -1,6 +1,6 @@
 spring:
   application:
-    name: tanzu-java-web-app
+    name: polaris-demo
 management:
   endpoints:
     web:
