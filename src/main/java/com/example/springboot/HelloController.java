@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Way faster!";
+		return "Should fail on scan!";
 	}
 
 }
