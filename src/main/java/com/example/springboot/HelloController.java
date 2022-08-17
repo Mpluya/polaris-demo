@@ -1,16 +1,18 @@
 package com.example.springboot;
 
 import org.springframework.web.bind.annotation.RestController;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class HelloController {
 
-	@RequestMapping("/")
-	public String index() throws ClassNotFoundException {
+	private static final String MY_SECRET = "47828a8dd77ee1eb9dde2d5e93cb221ce8c32b37";
 
-		Class c = Class.forName("java.time.Instant");
-		return "Should work as we want it to!";
+	@RequestMapping("/")
+	public String index() {
+
+		return "Should work as we want it to!" + MY_SECRET;
 	}
 
 }
