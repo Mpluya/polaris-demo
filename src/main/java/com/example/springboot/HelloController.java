@@ -6,15 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class HelloController {
 
-	private String name = null;
-
 	@RequestMapping("/")
-	public String index(String greetee) {
-		if (greetee != null) {
-			this.name = greetee;
-		}
+	public String index() throws ClassNotFoundException {
 
-		return "Hello " + this.name;  // if greetee is null, you see the previous user's data;
+		Class c = Class.forName("java.time.Instant");
+		return "Should work as we want it to!";
 	}
 
 }
