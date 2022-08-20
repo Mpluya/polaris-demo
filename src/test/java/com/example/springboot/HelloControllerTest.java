@@ -19,16 +19,13 @@ class HelloControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-	private static final String MY_SECRET = "47828a8dd77ee1eb9dde2d5e93cb221ce8c32b37";
-
-
     @Test
     void index() throws Exception {
-        assertEquals("Should work as we want it to!" + MY_SECRET, controller.index());
+        assertEquals("Should work as we want it to!", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Should work as we want it to!" + MY_SECRET));
+            .andExpect(content().string("Should work as we want it to!"git a));
     }
 }
