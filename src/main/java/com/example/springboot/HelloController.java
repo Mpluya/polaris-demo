@@ -10,7 +10,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 
-		return "Should work as we want it to!";
+		return "I love sonar!";
 	}
 
 }
