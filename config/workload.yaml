@@ -1,11 +1,11 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: polaris-demo
+  name: mae-demo
   namespace: rehan
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: polaris-demo
+    app.kubernetes.io/part-of: mae-demo
     apps.tanzu.vmware.com/has-tests: "true"
     workload-intent: code-analysis
 spec:
