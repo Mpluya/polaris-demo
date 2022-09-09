@@ -12,7 +12,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		System.out.println(MY_SECRET);
-		return "polaris-demo rules!";
+		return "after diet run!";
 	}
 
 }
