@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("rrv testing!", controller.index());
+        assertEquals("app live view connector rocks!", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("rrv testing!"));
+            .andExpect(content().string("app live view connector rocks!"));
     }
 }
