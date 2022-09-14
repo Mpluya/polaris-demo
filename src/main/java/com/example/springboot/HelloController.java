@@ -12,7 +12,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		System.out.println(MY_SECRET);
-		return "prod code promotion testing!";
+		return "prod code promotion testing too!";
 	}
 
 }
