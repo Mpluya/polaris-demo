@@ -12,7 +12,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		System.out.println(MY_SECRET);
-		return "testing 1.2.2 upgrade, yeet!";
+		return "nudge";
 	}
 
 }
