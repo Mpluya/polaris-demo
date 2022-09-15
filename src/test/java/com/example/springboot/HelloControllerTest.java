@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("pr step depends on delivery change instead of deployment!", controller.index());
+        assertEquals("uuuggghhh!", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("pr step depends on delivery change instead of deployment!"));
+            .andExpect(content().string("uuuggghhh!"));
     }
 }
