@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("chained steps!", controller.index());
+        assertEquals("chained steps ish!", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("chained steps!"));
+            .andExpect(content().string("chained steps ish!"));
     }
 }

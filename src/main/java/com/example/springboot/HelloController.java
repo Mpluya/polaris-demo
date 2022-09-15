@@ -12,7 +12,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		System.out.println(MY_SECRET);
-		return "chained steps!";
+		return "chained steps ish!";
 	}
 
 }
