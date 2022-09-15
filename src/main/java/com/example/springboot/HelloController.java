@@ -12,7 +12,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		System.out.println(MY_SECRET);
-		return "chained steps ish!";
+		return "pr step depends on delivery change instead of deployment!";
 	}
 
 }
