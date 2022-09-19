@@ -12,7 +12,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		System.out.println(MY_SECRET);
-		return "coz its been 3 days?";
+		return "coz its been 4 days?";
 	}
 
 }
