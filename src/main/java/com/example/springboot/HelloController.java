@@ -12,7 +12,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		System.out.println(MY_SECRET);
-		return "we made it in prod!";
+		return "no cleanup required!";
 	}
 
 }
